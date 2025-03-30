@@ -3,115 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SCUM Server Info</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SCUM Server Information" />
+    <meta property="og:description" content="Join our SCUM server and experience a thrilling survival gameplay with a friendly community." />
+    <meta property="og:image" content="https://cdn.cloudflare.steamstatic.com/steam/apps/513710/library_hero.jpg" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
-            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2d3748;
+            color: white;
             text-align: center;
             padding: 20px;
         }
 
-        h1 {
-            margin-bottom: 10px;
+        header h1 {
+            margin: 0;
         }
 
-        .filters {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .discord-link {
+            background-color: #7289da;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 18px;
             margin-bottom: 20px;
         }
 
-        input, select {
-            padding: 8px;
-            font-size: 14px;
-            border: none;
-            border-radius: 5px;
+        .discord-link:hover {
+            background-color: #5a6ab3;
         }
 
-        button {
-            padding: 8px 15px;
-            font-size: 14px;
-            background-color: #444;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-
-        button:hover {
-            background-color: #555;
-        }
-
-        table {
-            width: 100%;
-            max-width: 1000px;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background-color: #282828;
-            color: white;
-            display: none; /* Hide all tables initially */
-        }
-
-        th, td {
-            padding: 10px;
-            border: 1px solid #555;
-            text-align: left;
-        }
-
-        th {
-            background-color: #444;
-        }
-
-        tr:nth-child(even) {
-            background-color: #333;
-        }
-
-        tr:hover {
-            background-color: #555;
-        }
-
-        .input-field {
-            background-color: #333;
-            color: white;
-            border: 1px solid #666;
-        }
-
-        /* Loading spinner styles */
-        .loading {
-            display: none;
-            color: #ffffff;
-            font-size: 18px;
-            font-weight: bold;
+        .server-info {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
             margin-top: 20px;
         }
 
-        .loading-spinner {
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid #ffffff;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
+        .server-info h2 {
+            margin-top: 0;
         }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .server-info p {
+            line-height: 1.6;
         }
+
+        footer {
+            text-align: center;
+            background-color: #2d3748;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
     </style>
 </head>
 <body>
 
-    <h1>Welcome to the Game Dashboard</h1>
+    <header>
+        <h1>Welcome to Our SCUM Server</h1>
+    </header>
 
-    <button onclick="window.location.href='player-list.html'">Player List</button>
-    <button onclick="window.location.href='log-viewer.html'">Log Viewer</button>
+    <div class="container">
+        <!-- Discord Invitation Link -->
+        <a href="YOUR_DISCORD_INVITE_LINK" class="discord-link" target="_blank">
+            Join our Discord Server
+        </a>
+
+        <!-- About the Server -->
+        <div class="server-info">
+            <h2>About Our SCUM Server</h2>
+            <p>
+                Welcome to our SCUM server! We provide an immersive and challenging environment for SCUM players who enjoy the survival genre. 
+                Our server is hosted with stability in mind, offering minimal lag and a wide range of customizations to enhance the gameplay experience.
+            </p>
+            <p>
+                Whether you're a seasoned player or new to the game, you'll find a welcoming community ready to team up, challenge each other, 
+                and explore the world of SCUM together.
+            </p>
+            <p>
+                Key Features:
+                <ul>
+                    <li>Active community with daily events</li>
+                    <li>Custom server settings for an enhanced survival experience</li>
+                    <li>Regular updates and maintenance for smooth gameplay</li>
+                    <li>Support for both PvP and PvE gameplay modes</li>
+                </ul>
+            </p>
+            <p>
+                Join us today, and be part of our SCUM adventure!
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SCUM Server. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
